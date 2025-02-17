@@ -60,7 +60,6 @@ def fetch_video_links(base_url, headers):
 def download_archive_videos(base_url, save_folder, num_threads=1):
     os.makedirs(save_folder, exist_ok=True)
     headers = {
-        """Set user agent here. Future improvement could be to rotate this but it seems to work fine."""
         "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.124 Safari/537.36",
         "Referer": base_url
     }
